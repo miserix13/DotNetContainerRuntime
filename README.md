@@ -44,22 +44,40 @@ The runtime is organized into modular assemblies:
 - [x] Windows P/Invoke declarations:
   - Host Compute Service (HCS) APIs
   - Job Objects for resource control
+  - Process creation and management
+- [x] Native AOT configuration for CLI
 - [x] AvaloniaUI-based GUI application:
   - MVVM architecture with CommunityToolkit.Mvvm
   - Container lifecycle management (start, stop, delete, refresh)
   - Docker Desktop-inspired UI design
   - Real-time container status monitoring
   - Demo mode with sample containers
-  - Process creation and management
-- [x] Native AOT configuration for CLI
 
-### 🚧 Next Steps
-
-#### Phase 2: Linux Implementation
-- [ ] Implement `LinuxNamespaceManager`
-- [ ] Implement `LinuxCgroupController` (v2)
-- [ ] Implement `LinuxFilesystemManager` (OverlayFS)
-- [ ] Implement `LinuxProcessManager`
+### 🚧 Phase 2: Linux Implementation (In Progress)
+- [~] **LinuxNamespaceManager** - Initial implementation created
+  - Namespace creation with unshare()
+  - Namespace joining with setns()
+  - Namespace info and file descriptor management
+- [~] **LinuxCgroupController** - Initial implementation created
+  - Cgroups v2 unified hierarchy support
+  - CPU, memory, I/O, and PID limits
+  - Resource usage tracking
+- [~] **LinuxFilesystemManager** - Initial implementation created
+  - OverlayFS layered filesystem
+  - Mount/unmount operations
+  - Pivot root and chroot support
+- [~] **LinuxProcessManager** - Initial implementation created
+  - Fork/exec process creation
+  - Signal handling and process waiting
+  - User/group ID management
+- [~] **LinuxContainerRuntime** - Initial orchestrator created
+  - Coordinates all Linux components
+  - Container lifecycle management
+- [ ] **Interface Alignment** - Adapting implementations to Core interfaces
+  - Context classes integration
+  - Signal number handling
+  - Return type adjustments
+- [ ] Integration tests for Linux runtime
 - [ ] Basic container lifecycle on Linux
 
 #### Phase 3: Windows Implementation

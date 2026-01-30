@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DotNetContainerRuntime.Windows")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18fe0d9f4b7bb4152d6362425e4f85f3a7ae9a07")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d9e4dac70ed068cebb5bae4a49bc7eeab43b6375")]
 [assembly: System.Reflection.AssemblyProductAttribute("DotNetContainerRuntime.Windows")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DotNetContainerRuntime.Windows")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
