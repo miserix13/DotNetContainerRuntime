@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DotNetContainerRuntime.Image")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b8e2d37d7460053c235377f3e03cb746c211d5c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18fe0d9f4b7bb4152d6362425e4f85f3a7ae9a07")]
 [assembly: System.Reflection.AssemblyProductAttribute("DotNetContainerRuntime.Image")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DotNetContainerRuntime.Image")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

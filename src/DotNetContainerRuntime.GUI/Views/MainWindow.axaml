@@ -1,0 +1,223 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:DotNetContainerRuntime.GUI.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="700"
+        x:Class="DotNetContainerRuntime.GUI.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="DotNet Container Runtime"
+        Width="1200" Height="700"
+        MinWidth="800" MinHeight="500"
+        Background="#0B1426">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+    
+    <Window.Styles>
+        <Style Selector="Button.toolbar">
+            <Setter Property="Background" Value="#1A2332" />
+            <Setter Property="Foreground" Value="#E8EAED" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Padding" Value="16,8" />
+            <Setter Property="CornerRadius" Value="6" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="FontSize" Value="13" />
+            <Setter Property="FontWeight" Value="Medium" />
+        </Style>
+        <Style Selector="Button.toolbar:pointerover">
+            <Setter Property="Background" Value="#243447" />
+        </Style>
+        <Style Selector="Button.toolbar:disabled">
+            <Setter Property="Opacity" Value="0.5" />
+            <Setter Property="Cursor" Value="Arrow" />
+        </Style>
+        
+        <Style Selector="Button.primary">
+            <Setter Property="Background" Value="#0DB7ED" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Padding" Value="18,9" />
+            <Setter Property="CornerRadius" Value="6" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+        </Style>
+        <Style Selector="Button.primary:pointerover">
+            <Setter Property="Background" Value="#0FA0D1" />
+        </Style>
+        
+        <Style Selector="ListBoxItem">
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0,0,0,1" />
+            <Setter Property="BorderBrush" Value="#1A2332" />
+        </Style>
+        <Style Selector="ListBoxItem:selected /template/ ContentPresenter">
+            <Setter Property="Background" Value="#1A2F4D" />
+        </Style>
+        <Style Selector="ListBoxItem:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="#162337" />
+        </Style>
+        <Style Selector="ListBoxItem:selected:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="#1F3A5F" />
+        </Style>
+    </Window.Styles>
+
+    <Grid RowDefinitions="Auto,*,Auto">
+        <!-- Toolbar -->
+        <Border Grid.Row="0" Background="#0F1419" Padding="16,12" BorderThickness="0,0,0,1" BorderBrush="#1A2332">
+            <Grid ColumnDefinitions="Auto,*,Auto">
+                <StackPanel Grid.Column="0" Orientation="Horizontal" Spacing="8">
+                    <Button Content="↻ Refresh" Command="{Binding LoadContainersCommand}" Classes="toolbar" />
+                    <Button Content="+ Create" Command="{Binding CreateContainerCommand}" Classes="primary" />
+                </StackPanel>
+                
+                <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="8" Margin="16,0" HorizontalAlignment="Center">
+                    <Button Content="▶ Start" Command="{Binding StartContainerCommand}" Classes="toolbar" />
+                    <Button Content="■ Stop" Command="{Binding StopContainerCommand}" Classes="toolbar" />
+                    <Button Content="🗑 Delete" Command="{Binding DeleteContainerCommand}" Classes="toolbar" />
+                    <Rectangle Width="1" Height="24" Fill="#243447" Margin="4,0" />
+                    <Button Content="📋 Details" Command="{Binding ViewDetailsCommand}" Classes="toolbar" />
+                    <Button Content="📄 Logs" Command="{Binding ViewLogsCommand}" Classes="toolbar" />
+                </StackPanel>
+                
+                <TextBlock Grid.Column="2" 
+                          Text="{Binding PlatformInfo}" 
+                          VerticalAlignment="Center"
+                          Foreground="#6B7684"
+                          FontSize="12" />
+            </Grid>
+        </Border>
+
+        <!-- Main Content -->
+        <Grid Grid.Row="1" Margin="20">
+            <!-- Container List -->
+            <Border Background="#0F1419" BorderBrush="#1A2332" BorderThickness="1" CornerRadius="8">
+                <Grid RowDefinitions="Auto,*">
+                    <!-- Header -->
+                    <Border Grid.Row="0" Background="#0B1426" Padding="16,12" CornerRadius="8,8,0,0" BorderThickness="0,0,0,1" BorderBrush="#1A2332">
+                        <Grid ColumnDefinitions="250,150,100,*,150">
+                            <TextBlock Grid.Column="0" Text="CONTAINER ID" FontWeight="SemiBold" FontSize="12" Foreground="#6B7684" />
+                            <TextBlock Grid.Column="1" Text="STATUS" FontWeight="SemiBold" FontSize="12" Foreground="#6B7684" />
+                            <TextBlock Grid.Column="2" Text="PID" FontWeight="SemiBold" FontSize="12" Foreground="#6B7684" />
+                            <TextBlock Grid.Column="3" Text="BUNDLE" FontWeight="SemiBold" FontSize="12" Foreground="#6B7684" />
+                            <TextBlock Grid.Column="4" Text="CREATED" FontWeight="SemiBold" FontSize="12" Foreground="#6B7684" />
+                        </Grid>
+                    </Border>
+
+                    <!-- Container Items -->
+                    <ScrollViewer Grid.Row="1">
+                        <ListBox ItemsSource="{Binding Containers}"
+                                SelectedItem="{Binding SelectedContainer}"
+                                Background="Transparent"
+                                BorderThickness="0"
+                                SelectionMode="Single">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Border Background="Transparent" 
+                                            Padding="16,14"
+                                            Cursor="Hand">
+                                        <Grid ColumnDefinitions="250,150,100,*,150">
+                                            <TextBlock Grid.Column="0" 
+                                                      Text="{Binding Id}" 
+                                                      VerticalAlignment="Center"
+                                                      FontFamily="Consolas"
+                                                      FontSize="13"
+                                                      Foreground="#E8EAED" />
+                                            
+                                            <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="8">
+                                                <Border Width="6" Height="6" 
+                                                       CornerRadius="3"
+                                                       Background="{Binding StatusColor}" 
+                                                       VerticalAlignment="Center" />
+                                                <TextBlock Text="{Binding StatusText}" 
+                                                          VerticalAlignment="Center"
+                                                          FontSize="13"
+                                                          Foreground="#B8BFCA" />
+                                            </StackPanel>
+                                            
+                                            <TextBlock Grid.Column="2" 
+                                                      Text="{Binding Pid}" 
+                                                      VerticalAlignment="Center"
+                                                      FontFamily="Consolas"
+                                                      FontSize="13"
+                                                      Foreground="#B8BFCA" />
+                                            
+                                            <TextBlock Grid.Column="3" 
+                                                      Text="{Binding Bundle}" 
+                                                      VerticalAlignment="Center"
+                                                      TextTrimming="CharacterEllipsis"
+                                                      FontFamily="Consolas"
+                                                      FontSize="12"
+                                                      Foreground="#6B7684" />
+                                            
+                                            <TextBlock Grid.Column="4" 
+                                                      Text="{Binding CreatedAt, StringFormat='{}{0:g}'}" 
+                                                      VerticalAlignment="Center"
+                                                      FontSize="12"
+                                                      Foreground="#6B7684" />
+                                        </Grid>
+                                    </Border>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </ScrollViewer>
+                </Grid>
+            </Border>
+
+            <!-- Loading Overlay -->
+            <Border IsVisible="{Binding IsLoading}"
+                    Background="#CC0B1426"
+                    CornerRadius="8"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                <StackPanel HorizontalAlignment="Center" 
+                           VerticalAlignment="Center"
+                           Spacing="16">
+                    <Border Width="48" Height="48" 
+                           Background="#0DB7ED" 
+                           CornerRadius="24"
+                           HorizontalAlignment="Center">
+                        <TextBlock Text="⟳" 
+                                  FontSize="28"
+                                  Foreground="White"
+                                  HorizontalAlignment="Center"
+                                  VerticalAlignment="Center" />
+                    </Border>
+                    <TextBlock Text="Loading..." 
+                              FontSize="16"
+                              FontWeight="Medium"
+                              Foreground="#E8EAED"
+                              HorizontalAlignment="Center" />
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <!-- Status Bar -->
+        <Border Grid.Row="2" Background="#0F1419" Padding="16,10" BorderThickness="0,1,0,0" BorderBrush="#1A2332">
+            <Grid ColumnDefinitions="*,Auto">
+                <StackPanel Grid.Column="0" Orientation="Horizontal" Spacing="8">
+                    <Border Width="6" Height="6" 
+                           CornerRadius="3"
+                           Background="#0DB7ED"
+                           VerticalAlignment="Center" />
+                    <TextBlock Text="{Binding StatusMessage}" 
+                              VerticalAlignment="Center"
+                              Foreground="#B8BFCA"
+                              FontSize="13" />
+                </StackPanel>
+                <TextBlock Grid.Column="1" 
+                          Text="{Binding Containers.Count, StringFormat='Total: {0} container(s)'}" 
+                          VerticalAlignment="Center"
+                          Foreground="#6B7684"
+                          FontSize="12"
+                          FontWeight="Medium"
+                          Margin="16,0,0,0" />
+            </Grid>
+        </Border>
+    </Grid>
+
+</Window>

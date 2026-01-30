@@ -2,6 +2,7 @@
   <Folder Name="/src/">
     <Project Path="src/DotNetContainerRuntime.CLI/DotNetContainerRuntime.CLI.csproj" />
     <Project Path="src/DotNetContainerRuntime.Core/DotNetContainerRuntime.Core.csproj" />
+    <Project Path="src/DotNetContainerRuntime.GUI/DotNetContainerRuntime.GUI.csproj" />
     <Project Path="src/DotNetContainerRuntime.Image/DotNetContainerRuntime.Image.csproj" />
     <Project Path="src/DotNetContainerRuntime.Linux/DotNetContainerRuntime.Linux.csproj" />
     <Project Path="src/DotNetContainerRuntime.Runtime/DotNetContainerRuntime.Runtime.csproj" />
