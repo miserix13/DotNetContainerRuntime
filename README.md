@@ -20,12 +20,15 @@ The runtime is organized into modular assemblies:
 - **DotNetContainerRuntime.Windows**: Windows-specific implementations (HCS, job objects, WCIFS)
 - **DotNetContainerRuntime.Image**: OCI image format support and layer management
 - **DotNetContainerRuntime.CLI**: Command-line interface (Native AOT compiled)
+- **DotNetContainerRuntime.GUI**: Cross-platform GUI built with AvaloniaUI for container management
 
 ## Current Implementation Status
 
 ### ✅ Phase 1: Foundation (Completed)
-- [x] Project structure with 6 assemblies
+- [x] Project structure with 6 assemblies + GUI
 - [x] OCI Runtime Specification models (config.json, state.json)
+- [x] Unit test suite with 41 passing tests
+- [x] Cross-platform GUI with Docker-inspired design
 - [x] Core abstractions and interfaces:
   - `IContainerRuntime`: Lifecycle management (create, start, kill, delete, state)
   - `INamespaceManager`: Linux namespace management
@@ -41,6 +44,12 @@ The runtime is organized into modular assemblies:
 - [x] Windows P/Invoke declarations:
   - Host Compute Service (HCS) APIs
   - Job Objects for resource control
+- [x] AvaloniaUI-based GUI application:
+  - MVVM architecture with CommunityToolkit.Mvvm
+  - Container lifecycle management (start, stop, delete, refresh)
+  - Docker Desktop-inspired UI design
+  - Real-time container status monitoring
+  - Demo mode with sample containers
   - Process creation and management
 - [x] Native AOT configuration for CLI
 
@@ -82,8 +91,11 @@ The runtime is organized into modular assemblies:
 
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd DotNetContainerRuntime
+git clone <
+dotnet test
+
+# Run the GUI
+dotnet run --project src/DotNetContainerRuntime.GUIntainerRuntime
 
 # Build the solution
 dotnet build
@@ -92,7 +104,25 @@ dotnet build
 dotnet test
 
 # Publish CLI with Native AOT
-dotnet publish src/DotNetContainerRuntime.CLI -c Release
+dotnet p
+
+### GUI Application
+
+Launch the graphical interface for container management:
+
+```bash
+dotnet run --project src/DotNetContainerRuntime.GUI
+```
+
+**Features:**
+- Visual container lifecycle management
+- Real-time status monitoring with color-coded indicators
+- Docker Desktop-inspired interface
+- Create, start, stop, and delete containers
+- View container details and logs
+- Cross-platform (Windows, Linux, macOS)
+
+### CLIublish src/DotNetContainerRuntime.CLI -c Release
 ```
 
 ## Usage (Coming Soon)
