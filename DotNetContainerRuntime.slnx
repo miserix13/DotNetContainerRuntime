@@ -10,6 +10,7 @@
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/DotNetContainerRuntime.Core.Tests/DotNetContainerRuntime.Core.Tests.csproj" />
+    <Project Path="tests/DotNetContainerRuntime.Linux.Tests/DotNetContainerRuntime.Linux.Tests.csproj" />
     <Project Path="tests/DotNetContainerRuntime.Runtime.Tests/DotNetContainerRuntime.Runtime.Tests.csproj" />
   </Folder>
 </Solution>

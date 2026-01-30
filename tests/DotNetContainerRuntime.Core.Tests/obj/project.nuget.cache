@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wVUcBQSm550=",
+  "dgSpecHash": "Yf5eew7nyUc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jojow.WEBSTER\\source\\repos\\DotNetContainerRuntime\\tests\\DotNetContainerRuntime.Core.Tests\\DotNetContainerRuntime.Core.Tests.csproj",
+  "projectFilePath": "c:\\Users\\jojow.WEBSTER\\source\\repos\\DotNetContainerRuntime\\tests\\DotNetContainerRuntime.Core.Tests\\DotNetContainerRuntime.Core.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jojow.WEBSTER\\.nuget\\packages\\coverlet.collector\\6.0.4\\coverlet.collector.6.0.4.nupkg.sha512",
     "C:\\Users\\jojow.WEBSTER\\.nuget\\packages\\microsoft.codecoverage\\17.14.1\\microsoft.codecoverage.17.14.1.nupkg.sha512",

@@ -300,11 +300,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jojow.WEBSTER\\source\\repos\\DotNetContainerRuntime\\src\\DotNetContainerRuntime.CLI\\DotNetContainerRuntime.CLI.csproj",
+      "projectUniqueName": "c:\\Users\\jojow.WEBSTER\\source\\repos\\DotNetContainerRuntime\\src\\DotNetContainerRuntime.CLI\\DotNetContainerRuntime.CLI.csproj",
       "projectName": "DotNetContainerRuntime.CLI",
-      "projectPath": "C:\\Users\\jojow.WEBSTER\\source\\repos\\DotNetContainerRuntime\\src\\DotNetContainerRuntime.CLI\\DotNetContainerRuntime.CLI.csproj",
+      "projectPath": "c:\\Users\\jojow.WEBSTER\\source\\repos\\DotNetContainerRuntime\\src\\DotNetContainerRuntime.CLI\\DotNetContainerRuntime.CLI.csproj",
       "packagesPath": "C:\\Users\\jojow.WEBSTER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jojow.WEBSTER\\source\\repos\\DotNetContainerRuntime\\src\\DotNetContainerRuntime.CLI\\obj\\",
+      "outputPath": "c:\\Users\\jojow.WEBSTER\\source\\repos\\DotNetContainerRuntime\\src\\DotNetContainerRuntime.CLI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -326,8 +326,8 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\jojow.WEBSTER\\source\\repos\\DotNetContainerRuntime\\src\\DotNetContainerRuntime.Image\\DotNetContainerRuntime.Image.csproj": {
-              "projectPath": "C:\\Users\\jojow.WEBSTER\\source\\repos\\DotNetContainerRuntime\\src\\DotNetContainerRuntime.Image\\DotNetContainerRuntime.Image.csproj"
+            "c:\\Users\\jojow.WEBSTER\\source\\repos\\DotNetContainerRuntime\\src\\DotNetContainerRuntime.Image\\DotNetContainerRuntime.Image.csproj": {
+              "projectPath": "c:\\Users\\jojow.WEBSTER\\source\\repos\\DotNetContainerRuntime\\src\\DotNetContainerRuntime.Image\\DotNetContainerRuntime.Image.csproj"
             },
             "C:\\Users\\jojow.WEBSTER\\source\\repos\\DotNetContainerRuntime\\src\\DotNetContainerRuntime.Linux\\DotNetContainerRuntime.Linux.csproj": {
               "projectPath": "C:\\Users\\jojow.WEBSTER\\source\\repos\\DotNetContainerRuntime\\src\\DotNetContainerRuntime.Linux\\DotNetContainerRuntime.Linux.csproj"
