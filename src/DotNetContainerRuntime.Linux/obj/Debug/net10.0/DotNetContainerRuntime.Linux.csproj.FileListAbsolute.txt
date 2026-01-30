@@ -1,0 +1,16 @@
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Linux\bin\Debug\net10.0\DotNetContainerRuntime.Linux.deps.json
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Linux\bin\Debug\net10.0\DotNetContainerRuntime.Linux.dll
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Linux\bin\Debug\net10.0\DotNetContainerRuntime.Linux.pdb
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Linux\bin\Debug\net10.0\DotNetContainerRuntime.Core.dll
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Linux\bin\Debug\net10.0\DotNetContainerRuntime.Core.pdb
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Linux\obj\Debug\net10.0\DotNetContainerRuntime.Linux.csproj.AssemblyReference.cache
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Linux\obj\Debug\net10.0\DotNetContainerRuntime.Linux.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Linux\obj\Debug\net10.0\DotNetContainerRuntime.Linux.AssemblyInfoInputs.cache
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Linux\obj\Debug\net10.0\DotNetContainerRuntime.Linux.AssemblyInfo.cs
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Linux\obj\Debug\net10.0\DotNetContainerRuntime.Linux.csproj.CoreCompileInputs.cache
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Linux\obj\Debug\net10.0\DotNetContainerRuntime.Linux.sourcelink.json
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Linux\obj\Debug\net10.0\DotNetCo.AD246257.Up2Date
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Linux\obj\Debug\net10.0\DotNetContainerRuntime.Linux.dll
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Linux\obj\Debug\net10.0\refint\DotNetContainerRuntime.Linux.dll
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Linux\obj\Debug\net10.0\DotNetContainerRuntime.Linux.pdb
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Linux\obj\Debug\net10.0\ref\DotNetContainerRuntime.Linux.dll

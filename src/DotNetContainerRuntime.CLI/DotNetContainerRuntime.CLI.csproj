@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\DotNetContainerRuntime.Runtime\DotNetContainerRuntime.Runtime.csproj" />
+    <ProjectReference Include="..\DotNetContainerRuntime.Linux\DotNetContainerRuntime.Linux.csproj" />
+    <ProjectReference Include="..\DotNetContainerRuntime.Windows\DotNetContainerRuntime.Windows.csproj" />
+    <ProjectReference Include="..\DotNetContainerRuntime.Image\DotNetContainerRuntime.Image.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.CommandLine" Version="2.0.2" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    
+    <!-- Native AOT Configuration -->
+    <PublishAot>true</PublishAot>
+    <InvariantGlobalization>false</InvariantGlobalization>
+    <IlcOptimizationPreference>Speed</IlcOptimizationPreference>
+    <IlcGenerateMstatFile>true</IlcGenerateMstatFile>
+    <TrimMode>link</TrimMode>
+    
+    <!-- JSON Source Generation for AOT compatibility -->
+    <JsonSerializerIsReflectionEnabledByDefault>false</JsonSerializerIsReflectionEnabledByDefault>
+  </PropertyGroup>
+
+</Project>

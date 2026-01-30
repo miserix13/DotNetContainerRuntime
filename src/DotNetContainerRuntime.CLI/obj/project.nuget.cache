@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "X7ufGpzNe4A=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jojow.WEBSTER\\source\\repos\\DotNetContainerRuntime\\src\\DotNetContainerRuntime.CLI\\DotNetContainerRuntime.CLI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jojow.WEBSTER\\.nuget\\packages\\microsoft.dotnet.ilcompiler\\10.0.2\\microsoft.dotnet.ilcompiler.10.0.2.nupkg.sha512",
+    "C:\\Users\\jojow.WEBSTER\\.nuget\\packages\\microsoft.net.illink.tasks\\10.0.2\\microsoft.net.illink.tasks.10.0.2.nupkg.sha512",
+    "C:\\Users\\jojow.WEBSTER\\.nuget\\packages\\system.commandline\\2.0.2\\system.commandline.2.0.2.nupkg.sha512",
+    "C:\\Users\\jojow.WEBSTER\\.nuget\\packages\\runtime.win-x64.microsoft.dotnet.ilcompiler\\10.0.2\\runtime.win-x64.microsoft.dotnet.ilcompiler.10.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

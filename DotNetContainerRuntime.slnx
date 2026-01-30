@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/DotNetContainerRuntime.CLI/DotNetContainerRuntime.CLI.csproj" />
+    <Project Path="src/DotNetContainerRuntime.Core/DotNetContainerRuntime.Core.csproj" />
+    <Project Path="src/DotNetContainerRuntime.Image/DotNetContainerRuntime.Image.csproj" />
+    <Project Path="src/DotNetContainerRuntime.Linux/DotNetContainerRuntime.Linux.csproj" />
+    <Project Path="src/DotNetContainerRuntime.Runtime/DotNetContainerRuntime.Runtime.csproj" />
+    <Project Path="src/DotNetContainerRuntime.Windows/DotNetContainerRuntime.Windows.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/DotNetContainerRuntime.Core.Tests/DotNetContainerRuntime.Core.Tests.csproj" />
+    <Project Path="tests/DotNetContainerRuntime.Runtime.Tests/DotNetContainerRuntime.Runtime.Tests.csproj" />
+  </Folder>
+</Solution>

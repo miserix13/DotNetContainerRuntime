@@ -1,0 +1,12 @@
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Core\bin\Debug\net10.0\DotNetContainerRuntime.Core.deps.json
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Core\bin\Debug\net10.0\DotNetContainerRuntime.Core.dll
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Core\bin\Debug\net10.0\DotNetContainerRuntime.Core.pdb
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Core\obj\Debug\net10.0\DotNetContainerRuntime.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Core\obj\Debug\net10.0\DotNetContainerRuntime.Core.AssemblyInfoInputs.cache
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Core\obj\Debug\net10.0\DotNetContainerRuntime.Core.AssemblyInfo.cs
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Core\obj\Debug\net10.0\DotNetContainerRuntime.Core.csproj.CoreCompileInputs.cache
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Core\obj\Debug\net10.0\DotNetContainerRuntime.Core.sourcelink.json
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Core\obj\Debug\net10.0\DotNetContainerRuntime.Core.dll
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Core\obj\Debug\net10.0\refint\DotNetContainerRuntime.Core.dll
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Core\obj\Debug\net10.0\DotNetContainerRuntime.Core.pdb
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Core\obj\Debug\net10.0\ref\DotNetContainerRuntime.Core.dll

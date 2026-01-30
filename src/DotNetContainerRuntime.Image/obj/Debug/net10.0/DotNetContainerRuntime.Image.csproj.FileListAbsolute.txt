@@ -1,0 +1,16 @@
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Image\bin\Debug\net10.0\DotNetContainerRuntime.Image.deps.json
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Image\bin\Debug\net10.0\DotNetContainerRuntime.Image.dll
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Image\bin\Debug\net10.0\DotNetContainerRuntime.Image.pdb
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Image\bin\Debug\net10.0\DotNetContainerRuntime.Core.dll
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Image\bin\Debug\net10.0\DotNetContainerRuntime.Core.pdb
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Image\obj\Debug\net10.0\DotNetContainerRuntime.Image.csproj.AssemblyReference.cache
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Image\obj\Debug\net10.0\DotNetContainerRuntime.Image.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Image\obj\Debug\net10.0\DotNetContainerRuntime.Image.AssemblyInfoInputs.cache
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Image\obj\Debug\net10.0\DotNetContainerRuntime.Image.AssemblyInfo.cs
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Image\obj\Debug\net10.0\DotNetContainerRuntime.Image.csproj.CoreCompileInputs.cache
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Image\obj\Debug\net10.0\DotNetContainerRuntime.Image.sourcelink.json
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Image\obj\Debug\net10.0\DotNetCo.E7515167.Up2Date
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Image\obj\Debug\net10.0\DotNetContainerRuntime.Image.dll
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Image\obj\Debug\net10.0\refint\DotNetContainerRuntime.Image.dll
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Image\obj\Debug\net10.0\DotNetContainerRuntime.Image.pdb
+C:\Users\jojow.WEBSTER\source\repos\DotNetContainerRuntime\src\DotNetContainerRuntime.Image\obj\Debug\net10.0\ref\DotNetContainerRuntime.Image.dll
